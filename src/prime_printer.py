@@ -32,10 +32,10 @@ def generate_prime_num(total_prime_num: int) -> List[int]:
 
 
 def gen_2d_array(num_row: int, num_col: int, list_of_prime: List[int]) -> List[List[int]]:
-    test = [[] * num_col for i in range(num_row)]
+    test = [[] * num_col for _ in range(num_row)]
     k = 0
     for i in range(num_row):
-        for j in range(num_col):
+        for _ in range(num_col):
             if k >= len(list_of_prime):
                 break
             test[i].append(list_of_prime[k])
